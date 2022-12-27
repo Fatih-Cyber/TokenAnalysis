@@ -1,7 +1,7 @@
 package com.example.tokenanalysis.service;
 
 import com.example.tokenanalysis.DTO.TransactionDTO;
-import com.example.tokenanalysis.entity.Transaction;
+import com.example.tokenanalysis.entity.Transactions;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

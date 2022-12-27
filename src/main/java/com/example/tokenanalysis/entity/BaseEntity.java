@@ -1,5 +1,6 @@
 package com.example.tokenanalysis.entity;
 
+import com.example.tokenanalysis.enums.Status;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,4 +28,6 @@ public class BaseEntity {
     private LocalDateTime lastUpdateDateTime;
     @Column(nullable = false)
     private Long updatedBy;
+    @Enumerated(EnumType.STRING)
+    private Status status;
 }

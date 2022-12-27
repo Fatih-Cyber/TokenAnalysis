@@ -11,14 +11,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "trades")
 public class Trade extends BaseEntity{
     @ManyToOne
-    private Trader sellerId;
+    private Trader seller;
     @ManyToOne
-    private Trader buyerId;
+    private Trader buyer;
 
-    String sellerAccountNo;
-    String buyerAccountNo;
+    private String sellerAccountNo;
+    private String buyerAccountNo;
 
 }

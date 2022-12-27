@@ -12,14 +12,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "currencies")
 public class Currency extends BaseEntity{
 
     @Column(unique = true)
     String code;
     @Column(unique = true)
     String name;
-    private boolean isActive;
     private boolean isBaseCurrency;
 
 }
