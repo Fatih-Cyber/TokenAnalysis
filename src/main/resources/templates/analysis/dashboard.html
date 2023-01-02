@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+  <meta charset="UTF-8" >
+  <title > Dashboard</title>
+  <link th:href="@{/css/custom.css}" rel="stylesheet" media="screen">
+</head>
+<body>
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="col-md-12">
+      <section class="panel">
+        <header class="panel-heading">
+
+        </header>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="customDesign">
+              <thead>
+              <tr>
+                <th scope="col">TXHash</th>
+                <th scope="col">BlockNo</th>
+                <th scope="col">UnixTime</th>
+                <th scope="col">DateTime</th>
+                <th scope="col">From</th>
+                <th scope="col">To</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Method</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr th:each="transaction : ${transactions}">
+                <td><span th:text="${transaction.getTxhash()}">  </span></td>
+                <td><span th:text="${transaction.getBlockno()}">  </span></td>
+                <td><span th:text="${transaction.getUnixTimestamp()}">  </span></td>
+                <td><span th:text="${transaction.getDateTime()}">  </span></td>
+                <td><span th:text="${transaction.getFrom()}">  </span></td>
+                <td><span th:text="${transaction.getTo()}">  </span></td>
+                <td><span th:text="${transaction.getQuantity()}">  </span></td>
+                <td><span th:text="${transaction.getMethod()}">  </span></td>
+
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<!-- ------------------------TABLE END----------------------------- -->
+
+
+</body>
+</html>
+

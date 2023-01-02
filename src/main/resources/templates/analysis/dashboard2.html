@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/fragments/head :: head"></head>
+
+<body>
+
+<div class="dashboard-main-wrapper">
+
+    <div th:replace="/fragments/header :: header"></div>
+
+    <div th:replace="/fragments/left-sidebar :: left-sidebar"></div>
+
+    <div class="dashboard-wrapper">
+
+        <div class="dashboard-ecommerce">
+
+            <div class="container-fluid dashboard-content">
+
+                <div class="ecommerce-widget">
+
+                    <div class="row">
+
+                        <div class="col-lg-6 col-md-12">
+
+                            <section class="panel panel-transparent">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title">Analysis Dashboard</h2>
+                                </header>
+
+                                <div class="panel-body">
+
+                                    <!-- ------------------------FORM START----------------------------- -->
+                                    <div class="row">
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <div class="card bg-info bg-lighten-3">
+                                                <div class="card-content">
+                                                    <div class="card-body py-0">
+                                                        <div class="media">
+                                                            <div class="media-body info text-left">
+                                                                <h3 class="font-large-1 info mb-0">$15,678</h3>
+                                                                <span>Total Transactions</span>
+                                                            </div>
+                                                            <div class="media-right info text-right">
+                                                                <i class="ft-percent font-large-1"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="Widget-line-chart" class="height-75 WidgetlineChart WidgetlineChartShadow WidgetChart1 mb-3"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M10,42.5C19.238,33.333,28.476,15,37.714,15C46.952,15,56.19,70,65.429,70C74.667,70,83.905,42.5,93.143,42.5C102.381,42.5,111.619,70,120.857,70C130.095,70,139.333,15,148.571,15C157.81,15,167.048,42.5,176.286,42.5C185.524,42.5,194.762,35.167,204,31.5" class="ct-line"></path><line x1="10" y1="42.5" x2="10.01" y2="42.5" class="ct-point" ct:value="55"></line><line x1="37.714285714285715" y1="15" x2="37.72428571428571" y2="15" class="ct-point" ct:value="60"></line><line x1="65.42857142857143" y1="70" x2="65.43857142857144" y2="70" class="ct-point" ct:value="50"></line><line x1="93.14285714285714" y1="42.5" x2="93.15285714285714" y2="42.5" class="ct-point" ct:value="55"></line><line x1="120.85714285714286" y1="70" x2="120.86714285714287" y2="70" class="ct-point" ct:value="50"></line><line x1="148.57142857142858" y1="15" x2="148.58142857142857" y2="15" class="ct-point" ct:value="60"></line><line x1="176.28571428571428" y1="42.5" x2="176.29571428571427" y2="42.5" class="ct-point" ct:value="55"></line><line x1="204" y1="31.5" x2="204.01" y2="31.5" class="ct-point" ct:value="57"></line></g></g><g class="ct-labels"></g></svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <div class="card bg-warning bg-lighten-3">
+                                                <div class="card-content">
+                                                    <div class="card-body py-0">
+                                                        <div class="media">
+                                                            <div class="media-body warning text-left">
+                                                                <h3 class="font-large-1 warning mb-0">$2156</h3>
+                                                                <span>Total Sell Orders</span>
+                                                            </div>
+                                                            <div class="media-right warning text-right">
+                                                                <i class="ft-activity font-large-1"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="Widget-line-chart2" class="height-75 WidgetlineChart WidgetlineChartShadow WidgetChart2 mb-3"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M10,24.167C19.238,39.444,28.476,70,37.714,70C46.952,70,56.19,42.5,65.429,42.5C74.667,42.5,83.905,60.833,93.143,60.833C102.381,60.833,111.619,24.167,120.857,24.167C130.095,24.167,139.333,70,148.571,70C157.81,70,167.048,47.083,176.286,42.5C185.524,37.917,194.762,36.389,204,33.333" class="ct-line"></path><line x1="10" y1="24.166666666666664" x2="10.01" y2="24.166666666666664" class="ct-point" ct:value="75"></line><line x1="37.714285714285715" y1="70" x2="37.72428571428571" y2="70" class="ct-point" ct:value="50"></line><line x1="65.42857142857143" y1="42.5" x2="65.43857142857144" y2="42.5" class="ct-point" ct:value="65"></line><line x1="93.14285714285714" y1="60.833333333333336" x2="93.15285714285714" y2="60.833333333333336" class="ct-point" ct:value="55"></line><line x1="120.85714285714286" y1="24.166666666666664" x2="120.86714285714287" y2="24.166666666666664" class="ct-point" ct:value="75"></line><line x1="148.57142857142858" y1="70" x2="148.58142857142857" y2="70" class="ct-point" ct:value="50"></line><line x1="176.28571428571428" y1="42.5" x2="176.29571428571427" y2="42.5" class="ct-point" ct:value="65"></line><line x1="204" y1="33.333333333333336" x2="204.01" y2="33.333333333333336" class="ct-point" ct:value="70"></line></g></g><g class="ct-labels"></g></svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <div class="card bg-primary bg-lighten-3">
+                                                <div class="card-content">
+                                                    <div class="card-body py-0">
+                                                        <div class="media">
+                                                            <div class="media-body primary text-left">
+                                                                <h3 class="font-large-1 primary mb-0">$45,668</h3>
+                                                                <span>Total Buy Orders</span>
+                                                            </div>
+                                                            <div class="media-right primary text-right">
+                                                                <i class="ft-trending-up font-large-1"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="Widget-line-chart3" class="height-75 WidgetlineChart WidgetlineChartShadow WidgetChart3 mb-3"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M10,50.75C19.238,48,28.476,42.5,37.714,42.5C46.952,42.5,56.19,56.25,65.429,56.25C74.667,56.25,83.905,28.75,93.143,28.75C102.381,28.75,111.619,70,120.857,70C130.095,70,139.333,15,148.571,15C157.81,15,167.048,42.5,176.286,42.5C185.524,42.5,194.762,33.333,204,28.75" class="ct-line"></path><line x1="10" y1="50.75" x2="10.01" y2="50.75" class="ct-point" ct:value="57"></line><line x1="37.714285714285715" y1="42.5" x2="37.72428571428571" y2="42.5" class="ct-point" ct:value="60"></line><line x1="65.42857142857143" y1="56.25" x2="65.43857142857144" y2="56.25" class="ct-point" ct:value="55"></line><line x1="93.14285714285714" y1="28.75" x2="93.15285714285714" y2="28.75" class="ct-point" ct:value="65"></line><line x1="120.85714285714286" y1="70" x2="120.86714285714287" y2="70" class="ct-point" ct:value="50"></line><line x1="148.57142857142858" y1="15" x2="148.58142857142857" y2="15" class="ct-point" ct:value="70"></line><line x1="176.28571428571428" y1="42.5" x2="176.29571428571427" y2="42.5" class="ct-point" ct:value="60"></line><line x1="204" y1="28.75" x2="204.01" y2="28.75" class="ct-point" ct:value="65"></line></g></g><g class="ct-labels"></g></svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-12">
+                                            <div class="card bg-success bg-lighten-3">
+                                                <div class="card-content">
+                                                    <div class="card-body py-0">
+                                                        <div class="media">
+                                                            <div class="media-body success text-left">
+                                                                <h3 class="font-large-1 success mb-0">$32,454</h3>
+                                                                <span>Total Earning</span>
+                                                            </div>
+                                                            <div class="media-right success text-right">
+                                                                <i class="ft-credit-card font-large-1"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="Widget-line-chart4" class="height-75 WidgetlineChart WidgetlineChartShadow WidgetChart4 mb-3"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"></g><g><g class="ct-series ct-series-a"><path d="M10,31.5C19.238,35.167,28.476,42.5,37.714,42.5C46.952,42.5,56.19,15,65.429,15C74.667,15,83.905,70,93.143,70C102.381,70,111.619,42.5,120.857,42.5C130.095,42.5,139.333,70,148.571,70C157.81,70,167.048,15,176.286,15C185.524,15,194.762,33.333,204,42.5" class="ct-line"></path><line x1="10" y1="31.5" x2="10.01" y2="31.5" class="ct-point" ct:value="57"></line><line x1="37.714285714285715" y1="42.5" x2="37.72428571428571" y2="42.5" class="ct-point" ct:value="55"></line><line x1="65.42857142857143" y1="15" x2="65.43857142857144" y2="15" class="ct-point" ct:value="60"></line><line x1="93.14285714285714" y1="70" x2="93.15285714285714" y2="70" class="ct-point" ct:value="50"></line><line x1="120.85714285714286" y1="42.5" x2="120.86714285714287" y2="42.5" class="ct-point" ct:value="55"></line><line x1="148.57142857142858" y1="70" x2="148.58142857142857" y2="70" class="ct-point" ct:value="50"></line><line x1="176.28571428571428" y1="15" x2="176.29571428571427" y2="15" class="ct-point" ct:value="60"></line><line x1="204" y1="42.5" x2="204.01" y2="42.5" class="ct-point" ct:value="55"></line></g></g><g class="ct-labels"></g></svg></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ------------------------FORM END----------------------------- -->
+
+                                </div>
+
+                            </section>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="row match-height">
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="card" style="height: 498.125px;">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">Top Traders</h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    <div class="media pt-0 pb-2">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-20.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Jessica Rice</h4>
+                                            <p class="grey font-small-3 m-0">UX Designer</p>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">
+                                            <i class="ft-user-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="media py-2">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-15.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Jacob Rios</h4>
+                                            <p class="grey font-small-3 m-0">HTML Developer</p>
+                                        </div>
+                                        <button type="button" class="btn bg-light-primary">
+                                            <i class="ft-user-check"></i>
+                                        </button>
+                                    </div>
+                                    <div class="media py-2">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-7.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Russell Delgado</h4>
+                                            <p class="grey font-small-3 m-0">Database Designer</p>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">
+                                            <i class="ft-user-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="media py-2">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-6.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Sara McDonald</h4>
+                                            <p class="grey font-small-3 m-0">Team Leader</p>
+                                        </div>
+                                        <button type="button" class="btn bg-light-primary">
+                                            <i class="ft-user-check"></i>
+                                        </button>
+                                    </div>
+                                    <div class="media py-2">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-16.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Janet Lucas</h4>
+                                            <p class="grey font-small-3 m-0">Project Manger</p>
+                                        </div>
+                                        <button type="button" class="btn bg-light-primary">
+                                            <i class="ft-user-check"></i>
+                                        </button>
+                                    </div>
+                                    <div class="media py-2">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-25.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Mark Carter</h4>
+                                            <p class="grey font-small-3 m-0">HTML Developer</p>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">
+                                            <i class="ft-user-plus"></i>
+                                        </button>
+                                    </div>
+                                    <div class="media pt-2 pb-1">
+                                        <img class="mr-3 avatar rounded" src="../../../app-assets/img/portrait/small/avatar-s-5.png" alt="Avatar" width="35">
+                                        <div class="media-body">
+                                            <h4 class="font-medium-1 mb-0">Chad Reese</h4>
+                                            <p class="grey font-small-3 m-0">UI Designer</p>
+                                        </div>
+                                        <button type="button" class="btn btn-primary">
+                                            <i class="ft-user-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-12">
+                        <div class="card" style="height: 498.125px;">
+                            <div class="card-header">
+                                <h4 class="card-title mb-0">
+                                    <span>Transactions Analysis</span>
+                                    <span class="float-right cursor-pointer">
+                                            <i class="ft-more-vertical-"></i>
+                                        </span>
+                                </h4>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body" style="position: relative;">
+                                    <div class="chart-info mb-3">
+                                            <span class="mr-3">
+                                                <i class="fa fa-circle info font-small-3 mr-1"></i>
+                                                <span>Net Profit</span>
+                                            </span>
+                                        <span class="mr-3">
+                                                <i class="fa fa-circle info lighten-3 font-small-3 mr-1"></i>
+                                                <span>Revenue</span>
+                                            </span>
+                                    </div>
+                                    <div id="line-chart1" class="height-350 lineChart1 lineChart1Shadow" style="min-height: 365px;"><div id="apexchartstibwsj3i" class="apexcharts-canvas apexchartstibwsj3i light" style="width: 589px; height: 350px;"><svg id="SvgjsSvg1174" width="589" height="350" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1176" class="apexcharts-inner apexcharts-graphical" transform="translate(45.359375, 30)"><defs id="SvgjsDefs1175"><linearGradient id="SvgjsLinearGradient1179" x1="0" y1="0" x2="0" y2="1"><stop id="SvgjsStop1180" stop-opacity="0.4" stop-color="rgba(216,227,240,0.4)" offset="0"></stop><stop id="SvgjsStop1181" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop><stop id="SvgjsStop1182" stop-opacity="0.5" stop-color="rgba(190,209,230,0.5)" offset="1"></stop></linearGradient><clipPath id="gridRectMasktibwsj3i"><rect id="SvgjsRect1184" width="535.640625" height="279.348" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMasktibwsj3i"><rect id="SvgjsRect1185" width="535.640625" height="279.348" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath></defs><rect id="SvgjsRect1183" width="8.338134765625" height="277.348" x="164.794921875" y="0" rx="0" ry="0" fill="url(#SvgjsLinearGradient1179)" opacity="1" stroke-width="0" stroke-dasharray="3" class="apexcharts-xcrosshairs" y2="277.348" filter="none" fill-opacity="0.9" x1="164.794921875" x2="164.794921875"></rect><g id="SvgjsG1208" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1209" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text id="SvgjsText1210" font-family="Helvetica, Arial, sans-serif" x="33.3525390625" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1211" style="font-family: Helvetica, Arial, sans-serif;">Feb</tspan><title>Feb</title></text><text id="SvgjsText1212" font-family="Helvetica, Arial, sans-serif" x="100.0576171875" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1213" style="font-family: Helvetica, Arial, sans-serif;">Mar</tspan><title>Mar</title></text><text id="SvgjsText1214" font-family="Helvetica, Arial, sans-serif" x="166.7626953125" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1215" style="font-family: Helvetica, Arial, sans-serif;">Apr</tspan><title>Apr</title></text><text id="SvgjsText1216" font-family="Helvetica, Arial, sans-serif" x="233.4677734375" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1217" style="font-family: Helvetica, Arial, sans-serif;">May</tspan><title>May</title></text><text id="SvgjsText1218" font-family="Helvetica, Arial, sans-serif" x="300.1728515625" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1219" style="font-family: Helvetica, Arial, sans-serif;">Jun</tspan><title>Jun</title></text><text id="SvgjsText1220" font-family="Helvetica, Arial, sans-serif" x="366.8779296875" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1221" style="font-family: Helvetica, Arial, sans-serif;">Jul</tspan><title>Jul</title></text><text id="SvgjsText1222" font-family="Helvetica, Arial, sans-serif" x="433.5830078125" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1223" style="font-family: Helvetica, Arial, sans-serif;">Aug</tspan><title>Aug</title></text><text id="SvgjsText1224" font-family="Helvetica, Arial, sans-serif" x="500.2880859375" y="306.348" text-anchor="middle" dominant-baseline="auto" font-size="12px" font-weight="400" fill="#373d3f" class="apexcharts-xaxis-label " style="font-family: Helvetica, Arial, sans-serif;"><tspan id="SvgjsTspan1225" style="font-family: Helvetica, Arial, sans-serif;">Sep</tspan><title>Sep</title></text></g><line id="SvgjsLine1226" x1="0" y1="278.348" x2="533.640625" y2="278.348" stroke="#BDBDBD44" stroke-dasharray="0" stroke-width="1"></line></g><g id="SvgjsG1234" class="apexcharts-grid"><g id="SvgjsG1235" class="apexcharts-gridlines-horizontal"><line id="SvgjsLine1244" x1="0" y1="0" x2="533.640625" y2="0" stroke="#BDBDBD44" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1245" x1="0" y1="69.337" x2="533.640625" y2="69.337" stroke="#BDBDBD44" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1246" x1="0" y1="138.674" x2="533.640625" y2="138.674" stroke="#BDBDBD44" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1247" x1="0" y1="208.01100000000002" x2="533.640625" y2="208.01100000000002" stroke="#BDBDBD44" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1248" x1="0" y1="277.348" x2="533.640625" y2="277.348" stroke="#BDBDBD44" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1236" class="apexcharts-gridlines-vertical"></g><line id="SvgjsLine1237" x1="66.705078125" y1="278.348" x2="66.705078125" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1238" x1="133.41015625" y1="278.348" x2="133.41015625" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1239" x1="200.115234375" y1="278.348" x2="200.115234375" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1240" x1="266.8203125" y1="278.348" x2="266.8203125" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1241" x1="333.525390625" y1="278.348" x2="333.525390625" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1242" x1="400.23046875" y1="278.348" x2="400.23046875" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1243" x1="466.935546875" y1="278.348" x2="466.935546875" y2="284.348" stroke="#78909c" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine1250" x1="0" y1="277.348" x2="533.640625" y2="277.348" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1249" x1="0" y1="1" x2="0" y2="277.348" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1187" class="apexcharts-bar-series apexcharts-plot-series"><g id="SvgjsG1188" class="apexcharts-series" rel="1" seriesName="NetxProfit" data:realIndex="0"><path id="SvgjsPath1190" d="M 25.014404296875 277.348L 25.014404296875 185.98320035807293Q 28.1834716796875 183.81413297526043 31.3525390625 185.98320035807293L 31.3525390625 277.348L 24.014404296875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 25.014404296875 277.348L 25.014404296875 185.98320035807293Q 28.1834716796875 183.81413297526043 31.3525390625 185.98320035807293L 31.3525390625 277.348L 24.014404296875 277.348" pathFrom="M 25.014404296875 277.348L 25.014404296875 277.348L 31.3525390625 277.348L 31.3525390625 277.348L 24.014404296875 277.348" cy="184.89866666666668" cx="90.719482421875" j="0" val="40" barHeight="92.44933333333333" barWidth="8.338134765625"></path><path id="SvgjsPath1191" d="M 91.719482421875 277.348L 91.719482421875 162.8708670247396Q 94.8885498046875 160.7017996419271 98.0576171875 162.8708670247396L 98.0576171875 277.348L 90.719482421875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 91.719482421875 277.348L 91.719482421875 162.8708670247396Q 94.8885498046875 160.7017996419271 98.0576171875 162.8708670247396L 98.0576171875 277.348L 90.719482421875 277.348" pathFrom="M 91.719482421875 277.348L 91.719482421875 277.348L 98.0576171875 277.348L 98.0576171875 277.348L 90.719482421875 277.348" cy="161.78633333333335" cx="157.424560546875" j="1" val="50" barHeight="115.56166666666667" barWidth="8.338134765625"></path><path id="SvgjsPath1192" d="M 158.424560546875 277.348L 158.424560546875 24.19686702473959Q 161.5936279296875 22.02779964192709 164.7626953125 24.19686702473959L 164.7626953125 277.348L 157.424560546875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 158.424560546875 277.348L 158.424560546875 24.19686702473959Q 161.5936279296875 22.02779964192709 164.7626953125 24.19686702473959L 164.7626953125 277.348L 157.424560546875 277.348" pathFrom="M 158.424560546875 277.348L 158.424560546875 277.348L 164.7626953125 277.348L 164.7626953125 277.348L 157.424560546875 277.348" cy="23.11233333333334" cx="224.129638671875" j="2" val="110" barHeight="254.23566666666667" barWidth="8.338134765625"></path><path id="SvgjsPath1193" d="M 225.129638671875 277.348L 225.129638671875 70.42153369140627Q 228.2987060546875 68.25246630859377 231.4677734375 70.42153369140627L 231.4677734375 277.348L 224.129638671875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 225.129638671875 277.348L 225.129638671875 70.42153369140627Q 228.2987060546875 68.25246630859377 231.4677734375 70.42153369140627L 231.4677734375 277.348L 224.129638671875 277.348" pathFrom="M 225.129638671875 277.348L 225.129638671875 277.348L 231.4677734375 277.348L 231.4677734375 277.348L 224.129638671875 277.348" cy="69.33700000000002" cx="290.834716796875" j="3" val="90" barHeight="208.011" barWidth="8.338134765625"></path><path id="SvgjsPath1194" d="M 291.834716796875 277.348L 291.834716796875 81.97770035807292Q 295.0037841796875 79.80863297526042 298.1728515625 81.97770035807292L 298.1728515625 277.348L 290.834716796875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 291.834716796875 277.348L 291.834716796875 81.97770035807292Q 295.0037841796875 79.80863297526042 298.1728515625 81.97770035807292L 298.1728515625 277.348L 290.834716796875 277.348" pathFrom="M 291.834716796875 277.348L 291.834716796875 277.348L 298.1728515625 277.348L 298.1728515625 277.348L 290.834716796875 277.348" cy="80.89316666666667" cx="357.539794921875" j="4" val="85" barHeight="196.45483333333334" barWidth="8.338134765625"></path><path id="SvgjsPath1195" d="M 358.539794921875 277.348L 358.539794921875 12.640700358072934Q 361.7088623046875 10.471632975260434 364.8779296875 12.640700358072934L 364.8779296875 277.348L 357.539794921875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 358.539794921875 277.348L 358.539794921875 12.640700358072934Q 361.7088623046875 10.471632975260434 364.8779296875 12.640700358072934L 364.8779296875 277.348L 357.539794921875 277.348" pathFrom="M 358.539794921875 277.348L 358.539794921875 277.348L 364.8779296875 277.348L 364.8779296875 277.348L 357.539794921875 277.348" cy="11.556166666666684" cx="424.244873046875" j="5" val="115" barHeight="265.79183333333333" barWidth="8.338134765625"></path><path id="SvgjsPath1196" d="M 425.244873046875 277.348L 425.244873046875 47.30920035807293Q 428.4139404296875 45.14013297526043 431.5830078125 47.30920035807293L 431.5830078125 277.348L 424.244873046875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 425.244873046875 277.348L 425.244873046875 47.30920035807293Q 428.4139404296875 45.14013297526043 431.5830078125 47.30920035807293L 431.5830078125 277.348L 424.244873046875 277.348" pathFrom="M 425.244873046875 277.348L 425.244873046875 277.348L 431.5830078125 277.348L 431.5830078125 277.348L 424.244873046875 277.348" cy="46.22466666666668" cx="490.949951171875" j="6" val="100" barHeight="231.12333333333333" barWidth="8.338134765625"></path><path id="SvgjsPath1197" d="M 491.949951171875 277.348L 491.949951171875 70.42153369140627Q 495.1190185546875 68.25246630859377 498.2880859375 70.42153369140627L 498.2880859375 277.348L 490.949951171875 277.348" fill="rgba(47,139,230,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="0" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 491.949951171875 277.348L 491.949951171875 70.42153369140627Q 495.1190185546875 68.25246630859377 498.2880859375 70.42153369140627L 498.2880859375 277.348L 490.949951171875 277.348" pathFrom="M 491.949951171875 277.348L 491.949951171875 277.348L 498.2880859375 277.348L 498.2880859375 277.348L 490.949951171875 277.348" cy="69.33700000000002" cx="557.655029296875" j="7" val="90" barHeight="208.011" barWidth="8.338134765625"></path><g id="SvgjsG1189" class="apexcharts-datalabels"></g></g><g id="SvgjsG1198" class="apexcharts-series" rel="2" seriesName="Revenue" data:realIndex="1"><path id="SvgjsPath1200" d="M 33.3525390625 277.348L 33.3525390625 209.09553369140627Q 36.5216064453125 206.92646630859377 39.690673828125 209.09553369140627L 39.690673828125 277.348L 32.3525390625 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 33.3525390625 277.348L 33.3525390625 209.09553369140627Q 36.5216064453125 206.92646630859377 39.690673828125 209.09553369140627L 39.690673828125 277.348L 32.3525390625 277.348" pathFrom="M 33.3525390625 277.348L 33.3525390625 277.348L 39.690673828125 277.348L 39.690673828125 277.348L 32.3525390625 277.348" cy="208.01100000000002" cx="99.0576171875" j="0" val="30" barHeight="69.337" barWidth="8.338134765625"></path><path id="SvgjsPath1201" d="M 100.0576171875 277.348L 100.0576171875 185.98320035807293Q 103.2266845703125 183.81413297526043 106.395751953125 185.98320035807293L 106.395751953125 277.348L 99.0576171875 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 100.0576171875 277.348L 100.0576171875 185.98320035807293Q 103.2266845703125 183.81413297526043 106.395751953125 185.98320035807293L 106.395751953125 277.348L 99.0576171875 277.348" pathFrom="M 100.0576171875 277.348L 100.0576171875 277.348L 106.395751953125 277.348L 106.395751953125 277.348L 99.0576171875 277.348" cy="184.89866666666668" cx="165.7626953125" j="1" val="40" barHeight="92.44933333333333" barWidth="8.338134765625"></path><path id="SvgjsPath1202" d="M 166.7626953125 277.348L 166.7626953125 47.30920035807293Q 169.9317626953125 45.14013297526043 173.100830078125 47.30920035807293L 173.100830078125 277.348L 165.7626953125 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 166.7626953125 277.348L 166.7626953125 47.30920035807293Q 169.9317626953125 45.14013297526043 173.100830078125 47.30920035807293L 173.100830078125 277.348L 165.7626953125 277.348" pathFrom="M 166.7626953125 277.348L 166.7626953125 277.348L 173.100830078125 277.348L 173.100830078125 277.348L 165.7626953125 277.348" cy="46.22466666666668" cx="232.4677734375" j="2" val="100" barHeight="231.12333333333333" barWidth="8.338134765625"></path><path id="SvgjsPath1203" d="M 233.4677734375 277.348L 233.4677734375 93.5338670247396Q 236.6368408203125 91.3647996419271 239.805908203125 93.5338670247396L 239.805908203125 277.348L 232.4677734375 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 233.4677734375 277.348L 233.4677734375 93.5338670247396Q 236.6368408203125 91.3647996419271 239.805908203125 93.5338670247396L 239.805908203125 277.348L 232.4677734375 277.348" pathFrom="M 233.4677734375 277.348L 233.4677734375 277.348L 239.805908203125 277.348L 239.805908203125 277.348L 232.4677734375 277.348" cy="92.44933333333336" cx="299.1728515625" j="3" val="80" barHeight="184.89866666666666" barWidth="8.338134765625"></path><path id="SvgjsPath1204" d="M 300.1728515625 277.348L 300.1728515625 105.09003369140626Q 303.3419189453125 102.92096630859376 306.510986328125 105.09003369140626L 306.510986328125 277.348L 299.1728515625 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 300.1728515625 277.348L 300.1728515625 105.09003369140626Q 303.3419189453125 102.92096630859376 306.510986328125 105.09003369140626L 306.510986328125 277.348L 299.1728515625 277.348" pathFrom="M 300.1728515625 277.348L 300.1728515625 277.348L 306.510986328125 277.348L 306.510986328125 277.348L 299.1728515625 277.348" cy="104.00550000000001" cx="365.8779296875" j="4" val="75" barHeight="173.3425" barWidth="8.338134765625"></path><path id="SvgjsPath1205" d="M 366.8779296875 277.348L 366.8779296875 35.75303369140627Q 370.0469970703125 33.58396630859377 373.216064453125 35.75303369140627L 373.216064453125 277.348L 365.8779296875 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 366.8779296875 277.348L 366.8779296875 35.75303369140627Q 370.0469970703125 33.58396630859377 373.216064453125 35.75303369140627L 373.216064453125 277.348L 365.8779296875 277.348" pathFrom="M 366.8779296875 277.348L 366.8779296875 277.348L 373.216064453125 277.348L 373.216064453125 277.348L 365.8779296875 277.348" cy="34.66850000000002" cx="432.5830078125" j="5" val="105" barHeight="242.6795" barWidth="8.338134765625"></path><path id="SvgjsPath1206" d="M 433.5830078125 277.348L 433.5830078125 70.42153369140627Q 436.7520751953125 68.25246630859377 439.921142578125 70.42153369140627L 439.921142578125 277.348L 432.5830078125 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 433.5830078125 277.348L 433.5830078125 70.42153369140627Q 436.7520751953125 68.25246630859377 439.921142578125 70.42153369140627L 439.921142578125 277.348L 432.5830078125 277.348" pathFrom="M 433.5830078125 277.348L 433.5830078125 277.348L 439.921142578125 277.348L 439.921142578125 277.348L 432.5830078125 277.348" cy="69.33700000000002" cx="499.2880859375" j="6" val="90" barHeight="208.011" barWidth="8.338134765625"></path><path id="SvgjsPath1207" d="M 500.2880859375 277.348L 500.2880859375 93.5338670247396Q 503.4571533203125 91.3647996419271 506.626220703125 93.5338670247396L 506.626220703125 277.348L 499.2880859375 277.348" fill="rgba(172,224,252,0.85)" fill-opacity="1" stroke="transparent" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-bar-area" index="1" clip-path="url(#gridRectMasktibwsj3i)" pathTo="M 500.2880859375 277.348L 500.2880859375 93.5338670247396Q 503.4571533203125 91.3647996419271 506.626220703125 93.5338670247396L 506.626220703125 277.348L 499.2880859375 277.348" pathFrom="M 500.2880859375 277.348L 500.2880859375 277.348L 506.626220703125 277.348L 506.626220703125 277.348L 499.2880859375 277.348" cy="92.44933333333336" cx="565.9931640625" j="7" val="80" barHeight="184.89866666666666" barWidth="8.338134765625"></path><g id="SvgjsG1199" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1251" x1="0" y1="0" x2="533.640625" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1252" x1="0" y1="0" x2="533.640625" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1253" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1254" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1255" class="apexcharts-point-annotations"></g></g><g id="SvgjsG1227" class="apexcharts-yaxis" rel="0" transform="translate(12.359375, 0)"><g id="SvgjsG1228" class="apexcharts-yaxis-texts-g"><text id="SvgjsText1229" font-family="Helvetica, Arial, sans-serif" x="20" y="31.4" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="regular" fill="#373d3f" class="apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;">120</text><text id="SvgjsText1230" font-family="Helvetica, Arial, sans-serif" x="20" y="100.837" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="regular" fill="#373d3f" class="apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;">90</text><text id="SvgjsText1231" font-family="Helvetica, Arial, sans-serif" x="20" y="170.274" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="regular" fill="#373d3f" class="apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;">60</text><text id="SvgjsText1232" font-family="Helvetica, Arial, sans-serif" x="20" y="239.71099999999998" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="regular" fill="#373d3f" class="apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;">30</text><text id="SvgjsText1233" font-family="Helvetica, Arial, sans-serif" x="20" y="309.14799999999997" text-anchor="end" dominant-baseline="auto" font-size="11px" font-weight="regular" fill="#373d3f" class="apexcharts-yaxis-label " style="font-family: Helvetica, Arial, sans-serif;">0</text></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip light" style="left: 214.323px; top: 41px;"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;">Apr</div><div class="apexcharts-tooltip-series-group active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(172, 224, 252);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Revenue: </span><span class="apexcharts-tooltip-text-value">$100 thousands</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="display: none;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(172, 224, 252);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Revenue: </span><span class="apexcharts-tooltip-text-value">$100 thousands</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
+                                    <div class="resize-triggers"><div class="expand-trigger"><div style="width: 635px; height: 456px;"></div></div><div class="contract-trigger"></div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------TABLE START----------------------------- -->
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="col-md-12">
+                            <section class="panel">
+                                <header class="panel-heading">
+                                    <h2 class="panel-title">Traders List</h2>
+                                </header>
+                                <div class="panel-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">First Name</th>
+                                                <th scope="col">Last Name</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Gender</th>
+                                                <th scope="col">Phone</th>
+
+                                            </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                            <tr th:each="trader: ${traders}">
+                                                <td th:text="${trader.firstName}"></td>
+                                                <td th:text="${trader.lastName}"></td>
+                                                <td th:text="${trader.email}"></td>
+                                                <td th:text="${trader.gender.getValue()}"></td>
+                                                <td th:text="${trader.phone}"></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------------------------TABLE END----------------------------- -->
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- END Notification Sidebar-->
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+    <!-- BEGIN VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <script src="../../../app-assets/vendors/js/switchery.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="../../../app-assets/vendors/js/chartist.min.js"></script>
+    <script src="../../../app-assets/vendors/js/apexcharts.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN APEX JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <script src="../../../app-assets/js/notification-sidebar.js"></script>
+    <script src="../../../app-assets/js/customizer.js"></script>
+    <script src="../../../app-assets/js/scroll-top.js"></script>
+    <!-- END APEX JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="../../../app-assets/js/dashboard2.js"></script>
+    <!-- END PAGE LEVEL JS-->
+    <!-- BEGIN: Custom CSS-->
+    <script src="../../../assets/js/scripts.js"></script>
+    <!-- END: Custom CSS-->
+    <div th:replace="/fragments/footer :: footer"></div>
+
+</div>
+
+<div th:replace="/fragments/javascript :: js"></div>
+
+</body>
+
+</html>
