@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 
 
 @NoArgsConstructor
@@ -11,12 +12,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name="transactions")
 public class Transaction extends BaseEntity{
-    private String Txhash;
-    private String Blockno;
-    private String UnixTimestamp;
-    private String DateTime;
-    private String From;
-    private String To;
-    private String Quantity;
-    private String Method;
+    private String txHash;
+    private String blockNumber;
+    private LocalDateTime DateTime;
+    @ManyToOne
+    private Account fromAccount;
+    private String quantity;
+    @ManyToOne
+    private Account toAccount;
+    private String method;
 }

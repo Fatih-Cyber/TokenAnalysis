@@ -53,9 +53,9 @@ public class TraderServiceImpl implements TraderService{
   @Override
     public TraderDTO update(TraderDTO trader) {
       //Find current trader
-      Trader trader1 = traderRepository.findByUserName(trader.getUserName());  //has id
+      Trader trader1 = traderRepository.findByUserName(trader.getUserName());
       //Map update trader dto to entity object
-      Trader convertedTrader = mapper.convert(trader,new Trader() );   // has id?
+      Trader convertedTrader = mapper.convert(trader,new Trader() );
       //set id to the converted object
       convertedTrader.setId(trader1.getId());
       //save the updated trader in the db

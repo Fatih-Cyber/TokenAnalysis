@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class DashBoardController {
-    @GetMapping("/dashboard")
+    @GetMapping("/analysis/dashboard")
 public String showDashboard(Model model){
     model.addAttribute("transactions", GetTransactionsFromCsv.readTransactionsCsv("/Users/iceman/Downloads/TokenAnalysis-master/token.csv"));
-    return "/dashboard";
+    return "/analysis/dashboard";
 }
 
 }

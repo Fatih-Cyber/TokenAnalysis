@@ -26,4 +26,6 @@ public class Trade extends BaseEntity{
     private String sellerAccountNo;
     private String buyerAccountNo;
 
+    // csv to neo4J
+    // etherjs
 }
