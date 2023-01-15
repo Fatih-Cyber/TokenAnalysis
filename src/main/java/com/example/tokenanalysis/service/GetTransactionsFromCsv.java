@@ -1,14 +1,13 @@
 package com.example.tokenanalysis.service;
 
 import com.example.tokenanalysis.DTO.TransactionDTO;
-import com.example.tokenanalysis.entity.Transaction;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,12 +22,11 @@ public class GetTransactionsFromCsv {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(COMMA_DELIMITER);
                 TransactionDTO transaction=new TransactionDTO();
-                transaction.setTxhash(values[0]);
-                transaction.setBlockno(values[1]);
-                transaction.setUnixTimestamp(values[2]);
-                transaction.setDateTime(values[3]);
-                transaction.setFrom(values[4]);
-                transaction.setTo(values[5]);
+                transaction.setTxHash(values[0]);
+                transaction.setBlockNumber(values[1]);
+                transaction.setDateTime(LocalDateTime.parse(values[3]));
+                transaction.setFromAccount(values[4]);
+                transaction.setToAccount(values[5]);
                 transaction.setQuantity(values[6]);
                 transaction.setMethod(values[7]);
 
@@ -40,6 +38,7 @@ public class GetTransactionsFromCsv {
             throw new RuntimeException(e);
         }
         transactions.remove(0);
+
         return transactions.stream().filter(transaction -> transaction.getMethod().equals("Multicall")).limit(5).collect(Collectors.toList());
 
     }

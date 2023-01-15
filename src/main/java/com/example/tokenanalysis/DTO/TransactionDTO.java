@@ -7,18 +7,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 
 @NoArgsConstructor
 @Data
 @AllArgsConstructor
 public class
 TransactionDTO{
-    private String Txhash;
-    private String Blockno;
-    private String UnixTimestamp;
-    private String DateTime;
-    private String From;
-    private String To;
+    private String txHash;
+    private String blockNumber;
+    private LocalDateTime DateTime;
+    private String fromAccount;
+    private String toAccount;
     private String Quantity;
     private String Method;
 }
