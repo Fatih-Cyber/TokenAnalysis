@@ -17,7 +17,7 @@ public class
 TransactionDTO{
     private String txHash;
     private String blockNumber;
-    private LocalDateTime DateTime;
+    private String DateTime;
     private String fromAccount;
     private String toAccount;
     private String Quantity;

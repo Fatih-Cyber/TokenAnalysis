@@ -13,11 +13,15 @@ import lombok.Setter;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.TimeZone;
 
 
-@Component
-public class CsvToDb {
+@Service
+public class CsvToDb implements CsvService{
     private final AccountService accountService;
     private final TransactionService transactionService;
 
@@ -25,10 +29,8 @@ public class CsvToDb {
         this.accountService = accountService;
         this.transactionService = transactionService;
     }
-
+    @Override
     public void writeCsvToDb(){
-
-
         GetTransactionsFromCsv reader=new GetTransactionsFromCsv();
         List<TransactionDTO> transactions=
                 reader.readTransactionsCsv("/Users/iceman/Downloads/TokenAnalysis-master/token.csv");
@@ -54,7 +56,7 @@ public class CsvToDb {
             transaction.setToAccount(toAccount);
             transaction.setFromAccount(fromAccount);
             transaction.setTxHash(dto.getTxHash());
-            transaction.setDateTime(dto.getDateTime());
+            transaction.setDateTime(LocalDateTime.ofInstant(Instant.ofEpochMilli(Long.parseLong(dto.getDateTime())), TimeZone.getDefault().toZoneId()));
             transaction.setBlockNumber(dto.getBlockNumber());
             transaction.setQuantity(dto.getQuantity());
             transaction.setMethod(dto.getMethod());

@@ -30,12 +30,11 @@
               </thead>
               <tbody>
               <tr th:each="transaction : ${transactions}">
-                <td><span th:text="${transaction.getTxhash()}">  </span></td>
-                <td><span th:text="${transaction.getBlockno()}">  </span></td>
-                <td><span th:text="${transaction.getUnixTimestamp()}">  </span></td>
+                <td><span th:text="${transaction.getTxHash()}">  </span></td>
+                <td><span th:text="${transaction.getBlockNumber()}">  </span></td>
                 <td><span th:text="${transaction.getDateTime()}">  </span></td>
-                <td><span th:text="${transaction.getFrom()}">  </span></td>
-                <td><span th:text="${transaction.getTo()}">  </span></td>
+                <td><span th:text="${transaction.getFromAccount()}">  </span></td>
+                <td><span th:text="${transaction.getToAccount()}">  </span></td>
                 <td><span th:text="${transaction.getQuantity()}">  </span></td>
                 <td><span th:text="${transaction.getMethod()}">  </span></td>
 

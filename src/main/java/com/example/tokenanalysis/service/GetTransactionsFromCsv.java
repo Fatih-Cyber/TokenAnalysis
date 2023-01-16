@@ -24,7 +24,7 @@ public class GetTransactionsFromCsv {
                 TransactionDTO transaction=new TransactionDTO();
                 transaction.setTxHash(values[0]);
                 transaction.setBlockNumber(values[1]);
-                transaction.setDateTime(LocalDateTime.parse(values[3]));
+                transaction.setDateTime((values[2]));
                 transaction.setFromAccount(values[4]);
                 transaction.setToAccount(values[5]);
                 transaction.setQuantity(values[6]);
@@ -39,7 +39,7 @@ public class GetTransactionsFromCsv {
         }
         transactions.remove(0);
 
-        return transactions.stream().filter(transaction -> transaction.getMethod().equals("Multicall")).limit(5).collect(Collectors.toList());
-
+        //return transactions.stream().filter(transaction -> transaction.getMethod().equals("Multicall")).limit(5).collect(Collectors.toList());
+        return transactions.stream().collect(Collectors.toList());
     }
 }
